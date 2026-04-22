@@ -1,0 +1,424 @@
+/* =========================
+   🌍 GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0A192F;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   🔝 NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #F8FAFC;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1E293B;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00C896;
+}
+
+/* =========================
+   🚀 HERO
+========================= */
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(0,200,150,0.3);
+}
+
+.hero p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   💼 HERO PAGES
+========================= */
+
+.page-hero,
+.project-hero {
+  background: linear-gradient(135deg, #0A192F, #112240);
+  text-align: center;
+}
+
+.page-hero {
+  padding: 80px 20px;
+}
+
+.project-hero {
+  padding: 120px 20px;
+}
+
+.page-hero h1,
+.project-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.page-hero p,
+.project-hero p {
+  opacity: 0.8;
+}
+
+/* =========================
+   📦 SECTIONS
+========================= */
+
+.section {
+  padding: 60px 20px;
+  background: #F8FAFC;
+  color: #1E293B;
+}
+
+.section:nth-child(even) {
+  background: #ffffff;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+/* =========================
+   🧩 LAYOUT
+========================= */
+
+.two-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.two-columns div {
+  flex: 1;
+}
+
+/* =========================
+   🧱 SERVICES
+========================= */
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #F8FAFC;
+  color: #1E293B;
+}
+
+.services a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   🪪 CARD
+========================= */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   📁 PROJECTS
+========================= */
+
+.projects {
+  padding: 80px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #112240;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== project meta ===== */
+
+.project-meta {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.project-meta span {
+  background: rgba(255,255,255,0.08);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* =========================
+   🔘 BUTTONS
+========================= */
+
+button {
+  background: #2563EB;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #00C896;
+  transform: scale(1.05);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00C896;
+  font-weight: 500;
+}
+
+/* =========================
+   📸 IMAGE GRID
+========================= */
+
+.image-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* =========================
+   👤 PERSONA
+========================= */
+
+.persona {
+  text-align: center;
+}
+
+.persona img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   📢 CTA
+========================= */
+
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #0A192F;
+}
+
+.cta p {
+  opacity: 0.8;
+}
+
+/* =========================
+   🔙 BACK
+========================= */
+
+.back-btn {
+  display: inline-block;
+  margin: 20px;
+  color: #00C896;
+  text-decoration: none;
+}
+
+/* =========================
+   📞 CONTACT
+========================= */
+
+.contact {
+  text-align: center;
+  padding: 50px;
+  background: #F8FAFC;
+  color: #1E293B;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.contact-card {
+  background: #112240;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.contact-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #00C896;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   📦 FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #112240;
+  font-size: 14px;
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .services {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+.contact-desc {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}

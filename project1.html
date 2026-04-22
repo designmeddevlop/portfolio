@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fusion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <img src="image/Logo moderno con iniciales _ME_.png" alt="logo" width="65">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ux-ui.html">UX/UI</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+  <a href="ux-ui.html" class="back-btn">← Volver a UX/UI</a>
+
+<section class="project-hero">
+<h1>Fusion App</h1>
+<p>Diseñando una experiencia alimentaria inteligente, accesible y centrada en el usuario.</p>
+</section>
+
+<div class="project-meta">
+  <span>📱 UX/UI Design</span>
+  <span>⏱️ 2024</span>
+  <span>🎯 Case Study</span>
+</div>
+
+<section class="section">
+   <h2>Problema</h2>
+<p>
+Muchos usuarios tienen dificultades para gestionar su alimentación diaria debido a la falta de tiempo,
+compromisos personales y limitaciones de accesibilidad. Además, la mayoría de las aplicaciones actuales
+no tienen en cuenta necesidades específicas como la discapacidad o los hábitos alimenticios saludables.
+</p>
+</section>
+
+<section class="section">
+  <h2>Objetivo</h2>
+<p>
+Crear una aplicación inclusiva y fácil de usar que permita a los usuarios pedir comida de forma rápida,
+personalizada y adaptada a sus necesidades, mejorando su calidad de vida.
+</p>
+</section>
+
+<section class="section">
+  <h2>Mi rol</h2>
+  <ul>
+  <li>UX Designer</li>
+  <li>UX Researcher</li>
+  <li>Wireframing & Prototyping</li>
+  <li>Usability Testing</li>
+</ul>
+</section>
+
+<section class="section">
+  <h2>Usuarios</h2>
+<p>
+El producto está diseñado para diferentes perfiles de usuario, incluyendo personas con discapacidad,
+usuarios con estilos de vida activos y personas con horarios ocupados.
+</p>
+  <div class="grid">
+
+    <div class="card persona">
+      <img src="image/Rania1.png" alt="Ranya">
+      <h3>Ranya</h3>
+      <p><strong>Goal:</strong> Providing a platform or means for sharing talents and integrating into society</p>
+      <p><strong>Problem:</strong>Rania needs to integrate into society and return to her social activities.</p>
+    </div>
+
+    <div class="card persona">
+      <img src="image/Jordi1.png" alt="Jordi">
+      <h3>Jordi</h3>
+      <p><strong>Objetivo:</strong> I am looking for a field to pursue my interests, and training to get a job opportunity.</p>
+      <p><strong>Problema:</strong> cannot engage in his social and sports activities. He is looking for a job or training opportunity</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Investigación</h2>
+<p>
+Se realizó una investigación centrada en el usuario, incluyendo entrevistas y análisis de comportamiento.
+Los resultados mostraron que el problema no es solo la falta de tiempo, sino también la dificultad de acceso
+a opciones saludables y la falta de personalización en las aplicaciones existentes.
+</p>
+
+  <div class="grid">
+    <div class="card">⚡ Los usuarios quieren pedidos más rápidos</div>
+    <div class="card">♿ Falta de accesibilidad</div>
+    <div class="card">🥗 La salud no es prioritaria</div>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Puntos de dolor</h2>
+<ul>
+  <li>Dificultad para encontrar comida saludable</li>
+  <li>Falta de accesibilidad en muchas aplicaciones</li>
+  <li>Procesos de compra largos y complejos</li>
+  <li>Falta de opciones personalizadas</li>
+</ul>
+</section>
+
+<section class="section">
+  <h2>Proceso de diseño</h2>
+<p>
+El proceso se basó en una metodología centrada en el usuario, incluyendo:
+Investigación → Wireframes → Prototipo → Test de usabilidad → Iteración.
+</p>
+</section>
+
+<section class="section">
+  <h2>Test de usabilidad</h2>
+<p>
+Se realizaron dos rondas de pruebas. La primera permitió mejorar la navegación y simplificar el proceso de pedido.
+La segunda ayudó a optimizar el flujo de compra y añadir opciones de personalización.
+</p>
+
+  <div class="image-grid">
+    <img src="image/wer1.png" alt="Wireframe design">
+    <img src="image/wer3.png" alt="Wireframe design">
+    <img src="image/wer2.png" alt="Wireframe design">
+  </div>
+</section>
+
+  <section class="section">
+  <h2>Solución final</h2>
+<p>
+El resultado es una aplicación intuitiva, accesible y eficiente que permite a los usuarios pedir comida rápidamente,
+con opciones de personalización y adaptaciones para diferentes necesidades.
+</p>
+  <img src="image/finpro2.png" alt="Final Design">
+</section>
+
+<section class="section">
+  <h2>Accesibilidad</h2>
+<ul>
+  <li>Compatibilidad con lectores de pantalla</li>
+  <li>Uso de iconos claros para facilitar la navegación</li>
+  <li>Diseño visual adaptado para diferentes usuarios</li>
+</ul>
+</section>
+
+<section class="section">
+  <h2>Conclusión</h2>
+<p>
+Fusion App mejora significativamente la experiencia de los usuarios al ofrecer una solución rápida,
+accesible y centrada en sus necesidades reales, destacando frente a otras aplicaciones del mercado.
+</p>
+</section>
+
+<section class="cta">
+  <h2>¿Te interesa trabajar conmigo?</h2>
+<p>Construyamos algo increíble juntos.</p>
+  <a href="index.html">
+    <button>Contactar</button>
+  </a>
+</section>
+
+
+
+
+
+<script>
+const elements = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<footer class="footer">
+  <p>© 2026 Mohamed Elmardi</p>
+</footer>
+</body>
+</html>

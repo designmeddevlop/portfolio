@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohamed Elmardi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <img src="image/Logo moderno con iniciales _ME_.png" alt="logo" width="65">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="ux-ui.html">UX/UI</a>
+  <a href="dev.html">Development</a>
+  <a href="graphic.html">Graphic</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Mohamed Elmardi</h1>
+    <p>UX/UI Designer & Front-End Developer</p>
+    <a href="ux-ui.html">
+    <button>View My Work</button>
+    </a>
+  </div>
+</section>
+
+<section class="services">
+
+  <a href="graphic.html" class="card">
+    🎨 Graphic Design
+  </a>
+
+  <a href="ux-ui.html" class="card">
+    📱 UX/UI Design
+  </a>
+
+  <a href="dev.html" class="card">
+    💻 Development
+  </a>
+
+</section>
+
+<section class="contact">
+  <h2>Let’s work together</h2>
+  <a href="#">
+    <button>Contact Me</button>
+  </a>
+</section>
+
+<script>
+const elements = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<footer class="footer">
+  <p>© 2026 Mohamed Elmardi</p>
+</footer>
+</body>
+</html>

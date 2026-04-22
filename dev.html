@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <img src="image/Logo moderno con iniciales _ME_.png" alt="logo" width="65">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ux-ui.html">UX/UI</a>
+    <a href="graphic.html">Graphic</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Development</h1>
+  <p>Front-End projects built with clean and responsive code</p>
+</section>
+
+<section class="projects">
+
+  <h2 style="text-align:center;">My Development Projects</h2>
+
+  <div class="grid">
+
+    <!-- Project 1 -->
+    <div class="project card">
+      <img src="https://via.placeholder.com/400" alt="Landing Page">
+
+      <h3>Landing Page</h3>
+
+      <p>Responsive landing page built using HTML & CSS.</p>
+
+      <div class="buttons">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project card">
+      <img src="https://via.placeholder.com/400" alt="JavaScript App">
+
+      <h3>JavaScript App</h3>
+
+      <p>Interactive application using JavaScript.</p>
+
+      <div class="buttons">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+  <h2>Want to collaborate?</h2>
+  <p>I’m open to new opportunities.</p>
+  <a href="index.html">
+    <button>Contact Me</button>
+  </a>
+</section>
+
+<script>
+const elements = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<footer class="footer">
+  <p>© 2026 Mohamed Elmardi</p>
+</footer>
+</body>
+</html>

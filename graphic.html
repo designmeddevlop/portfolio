@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graphic Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <img src="image/Logo moderno con iniciales _ME_.png" alt="logo" width="65">
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ux-ui.html">UX/UI</a>
+    <a href="dev.html">Development</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Graphic Design</h1>
+  <p>Creative visual designs and branding projects</p>
+</section>
+
+<section class="projects">
+
+  <h2 style="text-align:center;">My Designs</h2>
+
+  <div class="grid">
+
+    <!-- Design 1 -->
+    <div class="project card">
+      <img src="https://via.placeholder.com/400" alt="Branding Design">
+
+      <h3>Brand Identity</h3>
+
+      <p>Modern branding design for a creative business.</p>
+    </div>
+
+    <!-- Design 2 -->
+    <div class="project card">
+      <img src="https://via.placeholder.com/400" alt="Poster Design">
+
+      <h3>Poster Design</h3>
+
+      <p>Creative poster with modern typography.</p>
+    </div>
+
+    <!-- Design 3 -->
+    <div class="project card">
+      <img src="https://via.placeholder.com/400" alt="Social Media Design">
+
+      <h3>Social Media</h3>
+
+      <p>Engaging social media visuals and content design.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+  <h2>Need a design?</h2>
+  <p>Let’s create something unique together.</p>
+  <a href="index.html">
+    <button>Contact Me</button>
+  </a>
+</section>
+
+<script>
+const elements = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<footer class="footer">
+  <p>© 2026 Mohamed Elmardi</p>
+</footer>
+</body>
+</html>

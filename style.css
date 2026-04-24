@@ -422,3 +422,12 @@ button:hover {
   opacity: 0.8;
   margin-bottom: 20px;
 }
+
+.work-in-progress {
+  background: #00C896;
+  color: #0A192F;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
